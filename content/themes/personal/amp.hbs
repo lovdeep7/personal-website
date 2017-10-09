@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html ⚡>
+<head>
+    {{!-- Document Settings --}}
+    <meta charset="utf-8">
+
+    {{!-- Page Meta --}}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    {{!-- Mobile Meta --}}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    {{!-- Brand icon --}}
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{amp_ghost_head}}
+
+    {{!-- Styles'n'Scripts --}}
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700|Slabo+13px" />
+    <style amp-custom>
+        .content{
+            max-width:600px;
+            box-sizing:border-box;
+            margin:0 auto;
+            padding:0 2em;
+        }
+    .post {
+    padding: 0em 0px 3em 0;
+    font-size:14px;
+    transition: 500ms;
+    opacity: 1; }
+    .post h1 {
+        font-size: 3em;
+        font-weight: 700; }
+    .post h1.title {
+        font-size: 3em;
+        margin-top: 0px; }
+    .post .standardFormat, .post img, .post .post-inner blockquote, .post .post-inner pre, .post .post-inner .post-meta, .post .post-inner .video-wrapper {
+        font-size: 1.4em;
+        line-height: 1.7em;
+        margin: 0 0 2em 0; }
+    .post h2 {
+        font-size: 3em; }
+    .post h1, .post h2 {
+        font-weight: 300;
+        color: rgba(33, 33, 33, 0.8);
+        text-align: center;
+        margin:0.7em 0;}
+    .post h3 {
+        font-weight: 300;
+        font-size: 2em;
+        color: rgba(33, 33, 33, 0.8);
+        margin-top: 2em;
+        margin-bottom: 0.7em;
+        text-align: left; }
+    .post h5 {
+        color: rgba(33, 33, 33, 0.8);
+        font-size: 1.5em;
+        text-align: left;
+        margin-top: 1em;
+        margin-bottom: 0.7em;
+        font-weight: 700; }
+    .post img {
+        display: block;
+        width: 100%;
+        box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.1);
+        border-radius: 5px; }
+    .post .post-inner {
+        max-width: 800px;
+        margin: 0 auto; }
+        .post .post-inner blockquote {
+        font-weight: 700;
+        font-size: 1.5em;
+        line-height: 2em;
+        color: #2AC648; }
+        .post .post-inner blockquote p {
+            font-size: inherit;
+            font-weight: inherit;
+            font-family: inherit;
+            line-height: inherit;
+            color: inherit; }
+        .post .post-inner hr {
+        margin-left: -3em;
+        margin-right: -3em;
+        border-style: none;
+        height: 1px;
+        background: #EEE; }
+        .post .post-inner code {
+        background: #232323;
+        display: inline-block;
+        padding: 0px 5px;
+        font-weight: 400;
+        color: #FFF;
+        font-size: 0.8em;
+        border-radius: 3px;
+        margin-top: -9px; }
+        .post .post-inner pre[class*="language-"] {
+        border-radius: 5px; }
+        .post .post-inner pre code {
+        padding: 1em;
+        margin: 0px;
+        display: block;
+        color: #FFF;
+        border-radius: 5px;
+        font-weight: inherit;
+        background: #232323; }
+        .post .post-inner .post-meta {
+        font-weight: 300;
+        text-align: center;
+        color: #AAA;
+        display: block; }
+        .post .post-inner a {
+        color: #151515;
+        border-bottom: 2px solid #AAA;
+        text-decoration: none; }
+        .post .post-inner a:hover {
+            text-decoration: none;
+            border-bottom-color: #2AC648; }
+        .post .post-inner p, .post .post-inner ol, .post .post-inner ul {
+        color: #555;
+        font-size: 1.3em;
+        line-height: 1.8em;
+        font-weight: 400; }
+        .post .post-inner p ul, .post .post-inner p ol, .post .post-inner ol ul, .post .post-inner ol ol, .post .post-inner ul ul, .post .post-inner ul ol {
+            font-size: 1em; }
+        .post .post-inner .caption {
+        display: block;
+        margin-top: -2em;
+        color: #AAA; }
+        .post .post-inner .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 0; }
+        .main-header{
+            padding:1em;
+            text-align:center;
+        }
+        .main-header a{
+            text-decoration:none;
+            color:#FFF;
+            font-weight:700;
+            color:#2AC648;
+            display:block;
+        }
+        .main-header a amp-img{
+            margin-bottom:0.5em;
+        }
+        body{
+            font-family: "Lato", sans-serif;
+        }
+        h1, h2, h3, .post-meta, blockquote{
+            font-family: "Slabo 13px", sans-serif;
+        }
+        p{
+            color: #555;
+            font-size: 1.05em;
+            line-height: 1.8em;
+            font-weight: 400
+        }
+        .post-meta{
+            text-align:center;
+            font-size:1.5em;
+        }
+        footer{
+            line-height:2em;
+            text-align:center;
+            background: #FAFAFA;
+            color: #333;
+            padding:2em 0;
+        }
+        a{
+            color:#2AC648;
+        }
+        blockquote{
+            font-weight: 700;
+            font-size: 1.4em;
+            line-height: 1.7em;
+            margin: 0 0 2em;
+            font-size: 1.5em;
+            line-height: 2em;
+            color: #2AC648;
+        }
+        blockquote p{
+            color: #2AC648;
+        }
+    </style>
+
+    {{!-- The AMP boilerplate --}}
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    {{!-- amp_components helper renders the necessary script tags for AMP depending on the HTML in the content --}}
+    {{amp_components}}
+
+</head>
+
+<body class="amp-template">
+    {{#post}}
+    <header class="main-header">
+        <nav class="blog-title">
+            <a href="{{@blog.url}}"><amp-img src="/assets/lib/img/logo.png" alt="Kevin Pei" height="44" width="44"></amp-img><br/>KEVIN PEI'S BLOG</a>
+        </nav>
+    </header>
+    {{#if image}}
+        <amp-img src="{{image absolute="true"}}" width="600" height="400" layout="responsive"></amp-img>
+    {{/if}}
+    <main class="content" role="main">
+        <article class="post">
+            <header class="post-header">
+                <h1 class="post-title">{{title}}</h1>
+                <section class="post-meta">
+                    <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY-MM-DD"}}</time>
+                </section>
+            </header>
+
+            <section class="post-content">
+
+                {{amp_content}}
+
+            </section>
+
+        </article>
+    </main>
+    {{/post}}
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
+        <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{!-- Document Settings --}}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{!-- Page Meta --}}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    {{!-- Mobile Meta --}}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    {{!-- Brand icon --}}
+    <link rel="shortcut icon" href="{{asset "/favicon.ico"}}">
+
+    {{!-- Styles'n'Scripts --}}
+    <script src="https://use.typekit.net/upz7elf.js"></script>
+    <link rel="stylesheet" href="//code.rifix.net/elusiveicons/2.0.0/css/elusive-icons.min.css">
+    <script>try{Typekit.load({ async: false });}catch(e){}</script>
+    <link href="{{asset "/lib/syntaxhighlighter/shCore.css"}}" rel="stylesheet" />
+    <link href="{{asset "/lib/syntaxhighlighter/shThemeDefault.css"}}" rel="stylesheet" />
+    <link href="{{asset "/build/style.css"}}" rel="stylesheet" />
+
+    {{!-- Ghost outputs important style and meta data with this tag --}}
+    {{ghost_head}}
+
+</head>
+<body class="{{body_class}}">
+    <!--[if lt IE 10]>
+        <div id="ie-overlay"><h1>Your browser is not supported</h1>
+        <p>Hello there, you are using an outdated and insecure browser. Please update your browser to experience this website.</p><a class="button" href="http://www.whatbrowser.org/">Learn More</a></div>
+    <![endif]-->
+    {{navigation}}
+    {{{body}}}
+    <footer id="footer">
+        <div id="footer-nav">
+            <div id="footer-nav-left">
+                <a href="/#!/about" class="quickNav">ABOUT</a>
+                <a href="/#!/projects" class="quickNav">PROJECTS</a>
+            </div>
+            <a href="/#!/home" class="quickNav" id="footer-nav-home"><img src="/assets/lib/img/logo.png" /></a>
+            <div id="footer-nav-right">
+                <a href="/#!/blog" class="blog-toggle">BLOG</a>
+                <a href="/#!/contact" class="quickNav">CONTACT</a>
+            </div>
+        </div>
+        <div class="social">
+            <a href="https://github.com/kpsuperplane" class="el el-github" target="_blank" title="GitHub"></a>
+            <a href="http://stackoverflow.com/users/864528/kevin-pei" class="el el-stackoverflow" target="_blank" title="StackOverflow"></a>
+            <a href="http://ca.linkedin.com/in/kpsuperplane/en" class="el el-linkedin" target="_blank" title="LinkedIn"></a>
+            <a class="button resume" href="/assets/documents/kevin-pei-resume-public.pdf" target="_blank">RESUME</a>
+        </div>
+        <div>&copy; Kevin Pei 2017. Made with coffee and watermelon.</div>
+    </footer> 
+    {{!-- Ghost outputs important scripts and data with this tag --}}
+    {{ghost_foot}}
+    <script type="text/javascript" src="{{asset "/lib/syntaxhighlighter/shCore.js"}}"></script>
+    <script type="text/javascript" src="{{asset "/lib/syntaxhighlighter/shBrushJScript.js"}}"></script>
+    <script type="text/javascript" src="{{asset "/build/index.js"}}"></script>
+</body>
+</html> 

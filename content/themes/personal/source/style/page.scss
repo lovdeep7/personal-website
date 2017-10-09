@@ -1,0 +1,41 @@
+.post.page{
+    padding:0 0 2em 0;
+    .post-inner{
+        max-width:none;
+        div.page-cover{
+            background-size:cover;
+            background-position:center center;
+            background-color:$theme;
+            padding:0;
+            margin-top:88px;
+        }
+        div.page-cover-inner{
+            padding:12em 2em 15em 2em;
+            margin-top:0;
+            margin-bottom:0;
+            background-size:100% 100%;
+            background-image:url(asset('img/banner/banner-overlay.png'));
+            background-color:rgba(255,255,255,0.85);
+        }
+        h1, h2, h3, h4, h5, h6, blockquote, p{
+            @extend .container;
+            padding: 0 29px;
+	    font-weight:300;
+            &, p{
+                line-height:2em;
+            } 
+        }
+        h1.title{
+            margin-top:0;
+            color:$theme;
+            margin-bottom:0;
+            padding:0;
+        }
+        .post-meta{
+            color:$textGrey;
+    	}
+	img.full-size{
+		border-radius:0;
+	}	
+    }
+}
