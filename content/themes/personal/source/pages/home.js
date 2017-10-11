@@ -109,30 +109,35 @@ export default {
         var projectColors = ['#1577E8', '#EA16F5', '#16F516', '#A200FF', '#FFFB00', '#FF0000', '#00FFB3'];
         var projects = [
             {
-                'name' : 'PROJECT 5K',
-                'image' : 'project5k.jpg',
-                'subtitle' : 'Promoting greater volunteerism among youth',
-                'url' : 'http://project5k.ca'
+                'name' : 'Createspace',
+                'image' : 'createspace.jpg',
+                'subtitle' : 'Promoting creativity in collaboration through humanitarian projects',
+                'url' : 'http://ourCreatespace.com'
             },{
-                'name' : 'VIA MUSICA',
-                'image' : 'viamusica.jpg',
-                'subtitle' : 'Enhancing music study through digital innovation',
-                'url' : 'http://viamusica.com',
+                'name' : 'Growth Year',
+                'image' : 'growthyear.jpg',
+                'subtitle' : 'An intensive growth program for gap year students',
+                'url' : 'http://growthyear.org',
             },{
-                'name' : 'IN THE LOOP',
-                'image' : 'intheloop.jpg',
-                'subtitle' : 'Easing access to breaking news through machine-learning',
-                'url' : 'http://devpost.com/software/in-the-loop-real-time-news-aggregating-web-app'
+                'name' : 'Ceebos',
+                'image' : 'ceebos.jpg',
+                'subtitle' : 'Machine Learning based Personal Chef recipe app',
+                'url' : 'http://ceebos.com'
             },{
-                'name' : 'MARKVILLE HISTORY',
-                'image' : 'markvillehistory.jpg',
-                'subtitle' : 'Improving experiences for a traditional school website',
-                'url' : 'http://markvillehistory.com'
+                'name' : 'Faraday Gloves',
+                'image' : 'faraday.jpg',
+                'subtitle' : 'Sustainable thermal gloves powered by harnessing body energy',
+                'url' : 'https://www.youtube.com/watch?v=OgefFNfZlDc&feature=youtu.be'
             },{
-                'name' : 'MGT',
-                'image' : 'mgt.jpg',
-                'subtitle' : 'Faciliating greater outreach for community events',
-                'url' : 'http://markham-getting-together.com'
+                'name' : 'Effect of inhibitors on Zika Virus',
+                'image' : 'zika.jpg',
+                'subtitle' : 'Research paper written at Western Medical Sciences',
+                'url' : 'https://www.dropbox.com/s/ak1a5p7jtlr8bx0/TheEffectof%20NS3Helicase%20InhibitorsonZikaVirusReplication.pdf?dl=0'
+            },{
+                'name' : 'KisKare Bandages',
+                'image' : 'kiskare.jpg',
+                'subtitle' : 'Biodegradable bandages innovated at University of Calgary',
+                'url' : 'https://www.youtube.com/watch?v=eFNL8nnpY7I&feature=youtu.be'
             }
         ];
         var currentIndex = -1;
